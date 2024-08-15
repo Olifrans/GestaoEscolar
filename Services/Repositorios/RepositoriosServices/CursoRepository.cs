@@ -1,4 +1,5 @@
 ﻿using Core;
+using InfraEstrutura;
 using Services.Repositorios.InterfacesRepositorios;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,6 @@ namespace Services.Repositorios.RepositoriosServices
 {
     public class CursoRepository : Repository<Curso>, ICursoRepository
     {
-        public CursoRepository(DbContext context) : base(context) { }
+        public CursoRepository(GestaoDbContext context) : base(context) { }
     }
 }
